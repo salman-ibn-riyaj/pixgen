@@ -1,17 +1,19 @@
-import { Button, Card, Chip } from "@heroui/react";
+import { FolderArrowDown, HeartFill } from "@gravity-ui/icons";
+import { Card } from "@heroui/react";
 import Image from "next/image";
-import {HeartFill} from '@gravity-ui/icons';
-import {FolderArrowDown} from '@gravity-ui/icons';
-import Link from "next/link";
 
+const PhotoDetails = async ({ params }) => {
+  const { id } = await params;
+  const photos = await fetch(`https://pixgen-two.vercel.app/data.json`).then(res => res.json());
 
-const PhotoCard = ({photo}) => {
+  console.log(photos);
 
-    return (
-        <Card className="rounded-md">
+  const photo = photos.find(p =>p.id == id);
+  console.log(photo);
+
+  return <Card className="rounded-md my-12">
             <div className="relative w-full aspect-square">
                 <Image sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover rounded-md" fill src={photo.imageUrl} alt={photo.title}></Image>
-                <Chip className="absolute right-2 top-2">{photo.category}</Chip>
             </div>
             <h2 className="font-bold">{photo.title}</h2>
 
@@ -26,9 +28,11 @@ const PhotoCard = ({photo}) => {
                 </div>
             </div>
 
-            <Link href={`/all-photos/${photo.id}`}><Button variant="outline" className={"w-full"}>View Details</Button></Link>
-        </Card>
-    );
+            <p>Prompt: {photo.prompt}</p>
+            <p>Category: {photo.category}</p>
+
+            
+        </Card>;
 };
 
-export default PhotoCard;
+export default PhotoDetails;
