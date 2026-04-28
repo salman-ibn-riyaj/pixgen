@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Neon Samurai",
-    "imageUrl": "https://picsum.photos/seed/neonsamurai/800/600",
+    "imageUrl": "https://i.pinimg.com/1200x/04/6a/ef/046aef3824fc35cd1ad0bff0f253619a.jpg",
     "prompt": "A lone samurai standing in a neon-lit cyberpunk alley, rain falling, glowing katana, ultra detailed",
     "category": "Cyberpunk",
     "model": "Midjourney v6",
@@ -15,7 +15,7 @@
   {
     "id": 2,
     "title": "Crystal Void",
-    "imageUrl": "https://picsum.photos/seed/crystalvoid/800/600",
+    "imageUrl": "https://i.pinimg.com/736x/59/b6/06/59b606155ab2b720973cfe44bb29d822.jpg",
     "prompt": "Floating crystal formations in an infinite void, purple and teal light refractions, surreal dreamscape",
     "category": "Surreal",
     "model": "DALL·E 3",
@@ -28,7 +28,7 @@
   {
     "id": 3,
     "title": "Pixel Dungeon Hero",
-    "imageUrl": "https://picsum.photos/seed/pixeldungeon/800/600",
+    "imageUrl": "https://i.pinimg.com/736x/9b/15/4c/9b154c6ddc848be1467149fd9c4220ad.jpg",
     "prompt": "8-bit pixel art hero exploring a dungeon with torchlight, retro game aesthetic, vibrant colors",
     "category": "Pixel Art",
     "model": "SDXL",
@@ -41,7 +41,7 @@
   {
     "id": 4,
     "title": "Galactic Throne",
-    "imageUrl": "https://picsum.photos/seed/galacticthrone/800/600",
+    "imageUrl": "https://i.pinimg.com/736x/99/cd/5f/99cd5f429b5e1e68bd14fcf49516245c.jpg",
     "prompt": "An alien emperor seated on a throne made of collapsed stars, sci-fi epic, cinematic lighting",
     "category": "Sci-Fi",
     "model": "Midjourney v6",
@@ -54,7 +54,7 @@
   {
     "id": 5,
     "title": "Clockwork Whale",
-    "imageUrl": "https://picsum.photos/seed/clockworkwhale/800/600",
+    "imageUrl": "https://i.pinimg.com/736x/4a/d5/a0/4ad5a0873306c143e64fe2837adfcf42.jpg",
     "prompt": "A massive whale made of brass gears and steam pipes flying through storm clouds, steampunk style",
     "category": "Steampunk",
     "model": "DALL·E 3",
@@ -67,7 +67,7 @@
   {
     "id": 6,
     "title": "Dragon's Keep",
-    "imageUrl": "https://picsum.photos/seed/dragonskeep/800/600",
+    "imageUrl": "https://i.pinimg.com/1200x/cf/43/97/cf4397d84ad5f674bc24735b53934c4c.jpg",
     "prompt": "Ancient dragon coiled around a medieval stone tower at sunset, fantasy epic, golden atmosphere",
     "category": "Fantasy",
     "model": "Stable Diffusion",
@@ -80,7 +80,7 @@
   {
     "id": 7,
     "title": "Retrowave City",
-    "imageUrl": "https://picsum.photos/seed/retrowavecity/800/600",
+    "imageUrl": "https://i.pinimg.com/1200x/59/9c/70/599c7056b7ccdcc5501fb462257b4c4e.jpg",
     "prompt": "80s aesthetic city skyline with pink and purple gradients, palm trees, grid floor, vaporwave vibes",
     "category": "Vaporwave",
     "model": "SDXL",
@@ -93,7 +93,7 @@
   {
     "id": 8,
     "title": "Solitude",
-    "imageUrl": "https://picsum.photos/seed/solitudeminimal/800/600",
+    "imageUrl": "https://i.pinimg.com/736x/46/df/04/46df04133022c354e1be4dda05829b55.jpg",
     "prompt": "A single black chair in a vast white empty room, minimalist photography style, soft shadows",
     "category": "Minimal",
     "model": "DALL·E 3",
@@ -106,7 +106,7 @@
   {
     "id": 9,
     "title": "Hyper Portrait",
-    "imageUrl": "https://picsum.photos/seed/hyperportrait/800/600",
+    "imageUrl": "https://i.pinimg.com/1200x/c3/5b/a1/c35ba1249f08c1ce028e27787abf47fb.jpg",
     "prompt": "Hyperrealistic portrait of an elderly fisherman with weathered skin, ocean background, photorealistic",
     "category": "Realistic",
     "model": "Midjourney v6",
@@ -119,7 +119,7 @@
   {
     "id": 10,
     "title": "Melting Clocks Redux",
-    "imageUrl": "https://picsum.photos/seed/meltingclocks/800/600",
+    "imageUrl": "https://i.pinimg.com/1200x/bf/c8/42/bfc84217afa890b7b82f85d6e6e7de42.jpg",
     "prompt": "Surreal desert landscape with melting clocks draped over cacti, inspired by dali, dreamlike atmosphere",
     "category": "Surreal",
     "model": "Stable Diffusion",
@@ -132,7 +132,7 @@
   {
     "id": 11,
     "title": "Pixel Forest",
-    "imageUrl": "https://picsum.photos/seed/pixelforest/800/600",
+    "imageUrl": "https://i.pinimg.com/1200x/71/aa/cf/71aacf0b0ec1d0ba76be59654fa9bfe4.jpg",
     "prompt": "Lush pixel art forest with glowing mushrooms and a hidden cottage, 16-bit game style, warm lighting",
     "category": "Pixel Art",
     "model": "SDXL",
@@ -145,7 +145,7 @@
   {
     "id": 12,
     "title": "Iron Mage",
-    "imageUrl": "https://picsum.photos/seed/ironmage/800/600",
+    "imageUrl": "https://i.pinimg.com/1200x/0a/15/53/0a155393df0b20be1301c3d1ac3fc487.jpg",
     "prompt": "A sorcerer in a brass mechanical suit casting lightning spells, steampunk fantasy crossover, detailed",
     "category": "Steampunk",
     "model": "Midjourney v6",
@@ -158,7 +158,7 @@
   {
     "id": 13,
     "title": "Dream Mall",
-    "imageUrl": "https://picsum.photos/seed/dreammall/800/600",
+    "imageUrl": "https://i.pinimg.com/736x/b2/c4/52/b2c452d3c05ec226124fd0c56a2d9642.jpg",
     "prompt": "Abandoned 80s shopping mall flooded with pink fog, statues, pastel colors, vaporwave aesthetic",
     "category": "Vaporwave",
     "model": "DALL·E 3",
@@ -171,7 +171,7 @@
   {
     "id": 14,
     "title": "Warp Gate",
-    "imageUrl": "https://picsum.photos/seed/warpgate/800/600",
+    "imageUrl": "https://i.pinimg.com/1200x/82/e1/7d/82e17d60b608a6d29c6cf2e21e2c06d4.jpg",
     "prompt": "Massive interstellar warp gate orbiting a gas giant, ships passing through, hard sci-fi concept art",
     "category": "Sci-Fi",
     "model": "Stable Diffusion",
@@ -184,7 +184,7 @@
   {
     "id": 15,
     "title": "Elven Ruins",
-    "imageUrl": "https://picsum.photos/seed/elvenruins/800/600",
+    "imageUrl": "https://i.pinimg.com/736x/be/ec/a6/beeca6bd372094e5c360b1aefaf6f157.jpg",
     "prompt": "Ancient elven temple ruins overgrown with glowing vines in an enchanted forest, fantasy concept art",
     "category": "Fantasy",
     "model": "Midjourney v6",
