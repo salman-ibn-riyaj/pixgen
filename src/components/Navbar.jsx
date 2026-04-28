@@ -1,8 +1,26 @@
 "use client";
+import { authClient, useSession } from "@/lib/auth-client";
+import { Avatar, Button } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
+  const data = authClient.useSession();
+  console.log(data);
+  const user = data.data?.user;
+  console.log(user);
+
+  const handleSignOut = async () => {
+    await authClient.signOut({
+      fetchOptions: {
+        onSuccess: () => {
+          router.push("/signin"); // redirect to login page
+        },
+      },
+    });
+  };
   return (
     <div className="border-b px-2">
       <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
@@ -34,14 +52,36 @@ const Navbar = () => {
         </ul>
 
         <div className="flex gap-4">
-          <ul className="flex items-center gap-2  text-sm">
-            <li>
-              <Link href={"/signup"}>SignUp</Link>
-            </li>
-            <li>
-              <Link href={"/signin"}>SignIn</Link>
-            </li>
-          </ul>
+          <div>
+            {user && (
+              <div className="flex gap-2 items-center">
+                <p>Welcome!{user?.name}</p>
+                <Avatar>
+                  <Avatar.Image
+                    alt="John Doe"
+                    src={user?.image}
+                    referrerPolicy="no-referrer"
+                  />
+                  <Avatar.Fallback>user?.name.CharAt(0)</Avatar.Fallback>
+                </Avatar>
+                <Button onClick={handleSignOut} variant="danger">
+                  SignOut
+                </Button>
+              </div>
+            )}
+          </div>
+          <div>
+            {!user && (
+              <ul className="flex items-center gap-2  text-sm">
+                <li>
+                  <Link href={"/signup"}>SignUp</Link>
+                </li>
+                <li>
+                  <Link href={"/signin"}>SignIn</Link>
+                </li>
+              </ul>
+            )}
+          </div>
         </div>
       </nav>
     </div>
