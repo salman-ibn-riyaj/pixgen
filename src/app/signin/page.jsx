@@ -10,6 +10,7 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import { FaGoogle } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 const SignInPage = () => {
@@ -21,23 +22,27 @@ const SignInPage = () => {
     // console.log(userData);
 
     const { data, error } = await authClient.signIn.email({
-      
       email: userData.email, // required
       password: userData.password, // required
-      callbackURL:'/'
+      callbackURL: "/",
     });
-    if(data){
-        toast.success('Sign In success');
+    if (data) {
+      toast.success("Sign In success");
     }
-    if(error){
-        toast.warning('Sign In failed! ' + error.message);
+    if (error) {
+      toast.warning("Sign In failed! " + error.message);
     }
   };
+
+  const googlesSignIn = async () => {
+  const data = await authClient.signIn.social({
+    provider: "google",
+  });
+};
   return (
     <div className="my-3">
       <h2 className="text-2xl font-bold my-1">Sign In</h2>
       <Form className="flex w-96 flex-col gap-4 my-5" onSubmit={onSubmit}>
-
         <TextField
           isRequired
           name="email"
@@ -88,6 +93,10 @@ const SignInPage = () => {
           </Button>
         </div>
       </Form>
+      <Button onClick={googlesSignIn}>
+        <FaGoogle />
+        Sign In With Google
+      </Button>
     </div>
   );
 };
