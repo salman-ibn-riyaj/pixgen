@@ -2,7 +2,7 @@
 
 export const getPhotosData = async() => {
 
-    const res = await fetch('https://pixgen-two.vercel.app/data.json');
+    const res = await fetch('https://pixgen-lvoc.vercel.app/data.json');
     const photos = await res.json();
 
     return photos;
@@ -10,4 +10,11 @@ export const getPhotosData = async() => {
 
     
 };
+
+export const getCategories = async()=>{
+    const res = await fetch('https://pixgen-lvoc.vercel.app/category.json');
+    const categories = await res.json();
+
+    return categories;
+}
 

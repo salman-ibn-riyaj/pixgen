@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const PhotoDetails = async ({ params }) => {
   const { id } = await params;
-  const photos = await fetch(`https://pixgen-two.vercel.app/data.json`).then(res => res.json());
+  const photos = await fetch(`https://pixgen-lvoc.vercel.app/data.json`).then(res => res.json());
 
   console.log(photos);
 
